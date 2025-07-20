@@ -17,7 +17,7 @@ export interface PostModalProps {
   onSubmit: (post: PostData) => void;
 }
 
-export interface User {
+export interface UserProps {
     id:       number;
     name:     string;
     username: string;
@@ -45,4 +45,15 @@ export interface Company {
     name:        string;
     catchPhrase: string;
     bs:          string;
+}
+
+export interface UserData {
+    id:       number;
+    name:     string;
+    username: string;
+    email:    string;
+    address:  Address;
+    phone:    string;
+    website:  string;
+    company:  Company;
 }

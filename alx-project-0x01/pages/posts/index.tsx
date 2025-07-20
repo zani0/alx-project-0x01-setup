@@ -12,7 +12,7 @@ const Posts: React.FC<PostProps[]> = ({ posts }) => {
   const handleAddPost = (newPost: PostData) => {
     setPost({ ...newPost, id: posts.length + 1 });
   };
-
+ 
 
   return (
     <div className="flex flex-col h-screen">
