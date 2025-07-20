@@ -57,3 +57,9 @@ export interface UserData {
     website:  string;
     company:  Company;
 }
+
+export interface UserModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onSubmit: (data: UserData) => void;
+}
